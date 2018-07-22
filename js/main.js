@@ -16,7 +16,12 @@ function initialize(){
 		zoom: 7
 	});
 
-	var tileLayer = L.tileLayer("src="https://www.openstreetmap.org/export/embed.html?bbox=-163.037109375%2C16.804541076383454%2C-72.50976562500001%2C54.470037612805754&amp;layer=cyclemap" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=4/38.00/-117.77&amp;layers=C">View Larger Map</a></small>").addTo(map);
+	var tileLayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox.streets').addTo(map);
 
 	//next: add features to map
 	getData();
