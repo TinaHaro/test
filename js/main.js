@@ -16,7 +16,7 @@ function initialize(){
 		zoom: 7
 	});
 
-	var tileLayer = L.tileLayer("https://www.openstreetmap.org/#map=3/39.37/-44.65&layers=C").addTo(map);
+	var tileLayer = L.tileLayer("<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-163.037109375%2C16.804541076383454%2C-72.50976562500001%2C54.470037612805754&amp;layer=cyclemap" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=4/38.00/-117.77&amp;layers=C">View Larger Map</a></small>").addTo(map);
 
 	//next: add features to map
 	getData();
