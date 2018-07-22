@@ -28,5 +28,17 @@
         <script type="text/javascript" src="lib/jquery/jquery-ui.js"></script>
         <script type="text/javascript" src="lib/leaflet/leaflet.0.7.3-src.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoidGluYXAyMWRoIiwiYSI6ImNpZ3psYXM2dTB4MTB3eW0wbHZqMDhuMGIifQ.6MsxpMHtsUUE6MMPGseKYQ';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v10'
+});
+</script>
     </body>
 </html>
